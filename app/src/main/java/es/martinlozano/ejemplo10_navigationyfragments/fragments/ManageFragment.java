@@ -17,9 +17,6 @@ import java.lang.ref.PhantomReference;
 
 import es.martinlozano.ejemplo10_navigationyfragments.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class ManageFragment extends Fragment {
 
     private ImageView ivImagen;
@@ -29,13 +26,15 @@ public class ManageFragment extends Fragment {
 
     public ManageFragment() {
         // Required empty public constructor
-        contexto = getActivity();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        contexto = getActivity();
+
         View rootView = inflater.inflate(R.layout.fragment_manage, container, false);
 
         // CÓDIGO NECESARIO PARA QUE LE FRAME FUNCIONE
