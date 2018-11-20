@@ -42,11 +42,13 @@ public class SlideshowFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (!etCorreo.equals("") && !etPassword.equals(""))
-                    Toast.makeText(contexto, "ENTRASTE", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(contexto, "ENTRASTE", Toast.LENGTH_LONG).show();
                 else
-                    Toast.makeText(contexto, "RELLENA LOS CAMPOS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(contexto, "RELLENA LOS CAMPOS", Toast.LENGTH_LONG).show();
             }
         });
+
+        Toast.makeText(contexto, "HOLA", Toast.LENGTH_LONG).show();
 
         return rootView;
     }
